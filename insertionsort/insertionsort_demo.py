@@ -8,7 +8,7 @@ array = [6, 10, 5, 4, 7, 10, 9, 7, 8, 8]
 insertionsort(array)
 print(array)
 
-array = generateRandomIntArray(100,0,100)
+array = generateRandomIntArray(40,0,100)
 print(array)
 insertionsort(array)
 print(array)

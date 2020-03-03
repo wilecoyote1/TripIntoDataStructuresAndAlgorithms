@@ -4,6 +4,7 @@ def insertionsort(array):
     """
     index_start = len(array)-1
     while index_start > 0:
+        print(array)
         for i in range(index_start):
             while array[index_start] < array[i]:
                 swap(array,i,index_start)
