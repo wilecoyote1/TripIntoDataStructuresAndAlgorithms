@@ -19,10 +19,20 @@ def euclide(a, b):
     """
     return the greatest common divisor with the euclidian method
     """
-    if b == 1:
-        return 1
+    while b != 0:
+        rest = a % b
+        a = b
+        b = rest
+    return a
+
+def euclide_recursive(a, b):
+    """
+    return the greatest common divisor with the euclidian method
+    """
+#    if b == 1:
+#        return 1
     rest = a % b
     if rest == 0:
         return b
     else:
-        return euclide(b,rest)
+        return euclide_recursive(b,rest)
